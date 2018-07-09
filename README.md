@@ -1,3 +1,4 @@
+王珮穎：kl9630821@gmail.com
 張博翔 u1000377@gmail.com
 施柏豪：he02658891@gmail.com
 王廷宇 F74662064@mailst.cjcu.edu.tw
