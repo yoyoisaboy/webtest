@@ -12,3 +12,4 @@
 吳科赏：ms0387327@gmail.com
 黃品誠：asdzxc9095@gmail.com
 黃智斌：flange0322@gmail.com
+史睿恩：vuples39@gmail.com
