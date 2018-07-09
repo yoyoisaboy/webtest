@@ -13,3 +13,4 @@
 黃品誠：asdzxc9095@gmail.com
 黃智斌：flange0322@gmail.com
 史睿恩：vuples39@gmail.com
+劉珈佑: toey8610@yahoo.com.tw
