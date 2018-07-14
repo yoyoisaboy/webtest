@@ -1,13 +1,12 @@
 <html>
 <head>
-<style>
+  <style>
   div{
     display: block;
   }
   input{
     display: none;
   }
-  input
 
 #outframe{
   width: 500px;
@@ -96,22 +95,23 @@
   top: 235px;
   z-index: 3;
 
+  transition: transform 500
 }
 
 
-</style>
+  </style>
 
 </head>
 <body>
-<input id="leftbotton" type="radio" name="circle" >
-<input id="centerbotton" type="radio" name="circle" >
-<input id="rightbotton" type="radio" name="circle" >
+<input id="leftbotton" type="radio"  >
+<input id="centerbotton" type="radio"  >
+<input id="rightbotton" type="radio"  >
 
 <div id="outframe">
     <label id="leftB" for="leftbotton"></label>
     <label id="centerB" for="centerbotton"></label>
     <label id="rightB" for="rightbotton"></label>
-    <div id="boll" class="move"></div>
+    <div id="boll"></div>
     <div id="inframe">
       <div id="blue"></div>
       <!-- -->
