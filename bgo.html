@@ -1,0 +1,131 @@
+<html>
+<head>
+<style>
+  div{
+    display: block;
+  }
+  input{
+    display: none;
+  }
+  input[id="centerbotton"] ~ #outframe > #intframe{
+    transition: all 50px ease-in-out;
+    left: 70px;
+    position: absolute;
+  }
+
+#outframe{
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 0px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  overflow: hidden;
+  z-index: 10;
+}
+#inframe{
+  width: 1500px;
+  height: 500px;
+  position: absolute;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+#blue{
+  width: 500px;
+  height: 500px;
+  background-color: blue;
+  position: absolute;
+  left: 0px;
+  z-index: 1;
+}
+#green{
+  width: 500px;
+  height: 500px;
+  background-color: green;
+  position: absolute;
+  left: 500px;
+  z-index: 1;
+}
+#orange{
+  width: 500px;
+  height: 500px;
+  background-color: orange;
+  position: absolute;
+  left: 1000px;
+  z-index: 1;
+}
+#leftB{
+  width: 50px;
+  height: 50px;
+  border-radius: 999rem;
+  border-style: solid ;
+  border-color: white;
+  position: absolute;
+  top:230px;
+  bottom: 0px;
+  left: 130px;
+  right: 0px;
+  z-index: 3;
+}
+#rightB{
+  width: 50px;
+  height: 50px;
+  border-radius: 999rem;
+  border-style: solid ;
+  border-color: white;
+  position: absolute;
+  top:230px;
+  bottom: 0px;
+  left: 260px;
+  right: 0px;
+  z-index: 3;
+}
+#centerB{
+  width: 50px;
+  height: 50px;
+  border-radius: 999rem;
+  border-style: solid ;
+  border-color: white;
+  position: absolute;
+  top:230px;
+  bottom: 0px;
+  left: 195px;
+  right: 0px;
+  z-index: 3;
+}
+#boll{
+  width: 47px;
+  height: 47px;
+  position: absolute;
+  border-radius: 999rem;
+  background-color: white;
+  top: 235px;
+  z-index: 3;
+
+}
+
+
+</style>
+
+</head>
+<body>
+<input id="leftbotton" type="radio" name="circle" >
+<input id="centerbotton" type="radio" name="circle" >
+<input id="rightbotton" type="radio" name="circle" >
+
+<div id="outframe">
+    <label id="leftB" for="leftbotton"></label>
+    <label id="centerB" for="centerbotton"></label>
+    <label id="rightB" for="rightbotton"></label>
+    <div id="boll" class="move"></div>
+    <div id="inframe">
+      <div id="blue"></div>
+      <!-- -->
+      <div id="green"></div>
+      <!-- -->
+      <div id="orange"></div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
