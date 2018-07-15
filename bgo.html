@@ -6,6 +6,7 @@ div{
   }
 input{
     display: none;
+    z-index: 999;
   }
 input[id=leftbotton]{
   position: absolute;
@@ -22,10 +23,10 @@ input[id=rightbotton]{
   top: 40px;
   left: 80px;
 }
-/* input[id=leftbotton]:checked ~ #outframe > #boll {
+input[id=leftbotton]:checked ~ #outframe > #boll{
   transition: transform 500ms ease-in-out;
-  left: 70px;
-} */
+  transform: translateX(135px);
+}
 input[id=centerbotton]:checked ~ #outframe > #boll{
   transition: transform 500ms ease-in-out;
   transform: translateX(200px);
@@ -33,6 +34,10 @@ input[id=centerbotton]:checked ~ #outframe > #boll{
 input[id=rightbotton]:checked ~ #outframe > #boll{
   transition: transform 500ms ease-in-out;
   transform: translateX(265px);
+}
+input[id=leftbotton]:checked ~ #outframe > #inframe{
+  transition: transform 500ms ease-in-out;
+  transform: translateX(0px);
 }
 input[id=centerbotton]:checked ~ #outframe > #inframe{
   transition: transform 500ms ease-in-out;
@@ -130,8 +135,7 @@ input[id=rightbotton]:checked ~ #outframe > #inframe{
   background-color: white;
   top: 235px;
   z-index: 3;
-  transform: translateX(135px);
-
+    transform: translateX(135px);
 }
 
 
@@ -139,9 +143,9 @@ input[id=rightbotton]:checked ~ #outframe > #inframe{
 
 </head>
 <body>
-<input id="leftbotton" type="radio"  >
-<input id="centerbotton" type="radio"  >
-<input id="rightbotton" type="radio"  >
+<input id="leftbotton" type="radio" name="bottom" checked >
+<input id="centerbotton" type="radio" name="bottom" >
+<input id="rightbotton" type="radio" name="bottom" >
 
 <div id="outframe">
     <label id="leftB" for="leftbotton"></label>
