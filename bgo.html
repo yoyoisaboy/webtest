@@ -26,22 +26,23 @@ input[id=rightbotton]{
   transition: transform 500ms ease-in-out;
   left: 70px;
 } */
-
 input[id=centerbotton]:checked ~ #outframe > #boll{
-  transition: transform 300ms ease-in-out;
-  left: 65px;
+  transition: transform 100ms ease-in-out;
+  transform: translateX(65px);
 }
 input[id=rightbotton]:checked ~ #outframe > #boll{
-  transition: transform 300ms ease-in-out;
-  left: 130px;
+  transition: transform 100ms ease-in-out;
+  transform: translateX(130px);
 }
 input[id=centerbotton]:checked ~ #outframe > #inframe{
-  transition: transform 300ms ease-in-out;
-  left: -500px;
+  transition: transform 100ms ease-in-out;
+  transform: translateX(-500px);
+
 }
 input[id=rightbotton]:checked ~ #outframe > #inframe{
   transition: transform 300ms ease-in-out;
-  left: -1000px;
+  transform: translateX(-1000px);
+
 }
 #outframe{
   width: 500px;
