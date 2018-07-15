@@ -1,13 +1,48 @@
 <html>
 <head>
-  <style>
-  div{
+<style>
+div{
     display: block;
   }
-  input{
+input{
     display: none;
   }
+input[id=leftbotton]{
+  position: absolute;
+  top: 40px;
+  left: 20px;
+}
+input[id=centerbotton]{
+  position: absolute;
+  top: 40px;
+  left: 50px;
+}
+input[id=rightbotton]{
+  position: absolute;
+  top: 40px;
+  left: 80px;
+}
+/* input[id=leftbotton]:checked ~ #outframe > #boll {
+  transition: transform 500ms ease-in-out;
+  left: 70px;
+} */
 
+input[id=centerbotton]:checked ~ #outframe > #boll{
+  transition: transform 300ms ease-in-out;
+  left: 65px;
+}
+input[id=rightbotton]:checked ~ #outframe > #boll{
+  transition: transform 300ms ease-in-out;
+  left: 130px;
+}
+input[id=centerbotton]:checked ~ #outframe > #inframe{
+  transition: transform 300ms ease-in-out;
+  left: -500px;
+}
+input[id=rightbotton]:checked ~ #outframe > #inframe{
+  transition: transform 300ms ease-in-out;
+  left: -1000px;
+}
 #outframe{
   width: 500px;
   height: 500px;
@@ -94,12 +129,12 @@
   background-color: white;
   top: 235px;
   z-index: 3;
+  transform: translateX(135px);
 
-  transition: transform 500
 }
 
 
-  </style>
+</style>
 
 </head>
 <body>
