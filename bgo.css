@@ -1,0 +1,134 @@
+div{
+    display: block;
+  }
+input{
+    display: none;
+    z-index: 999;
+  }
+input[id=leftbotton]{
+  position: absolute;
+  top: 40px;
+  left: 20px;
+}
+input[id=centerbotton]{
+  position: absolute;
+  top: 40px;
+  left: 50px;
+}
+input[id=rightbotton]{
+  position: absolute;
+  top: 40px;
+  left: 80px;
+}
+input[id=leftbotton]:checked ~ #outframe > #boll{
+  transition: transform 500ms ease-in-out;
+  transform: translateX(135px);
+}
+input[id=centerbotton]:checked ~ #outframe > #boll{
+  transition: transform 500ms ease-in-out;
+  transform: translateX(200px);
+}
+input[id=rightbotton]:checked ~ #outframe > #boll{
+  transition: transform 500ms ease-in-out;
+  transform: translateX(265px);
+}
+input[id=leftbotton]:checked ~ #outframe > #inframe{
+  transition: transform 500ms ease-in-out;
+  transform: translateX(0px);
+}
+input[id=centerbotton]:checked ~ #outframe > #inframe{
+  transition: transform 500ms ease-in-out;
+  transform: translateX(-500px);
+
+}
+input[id=rightbotton]:checked ~ #outframe > #inframe{
+  transition: transform 500ms ease-in-out;
+  transform: translateX(-1000px);
+
+}
+#outframe{
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 0px;
+  overflow: hidden;
+  z-index: 10;
+}
+#inframe{
+  width: 1500px;
+  height: 500px;
+  position: absolute;
+}
+#blue{
+  width: 500px;
+  height: 500px;
+  background-color: blue;
+  position: absolute;
+  left: 0px;
+  z-index: 1;
+}
+#green{
+  width: 500px;
+  height: 500px;
+  background-color: green;
+  position: absolute;
+  left: 500px;
+  z-index: 1;
+}
+#orange{
+  width: 500px;
+  height: 500px;
+  background-color: orange;
+  position: absolute;
+  left: 1000px;
+  z-index: 1;
+}
+#leftB{
+  width: 50px;
+  height: 50px;
+  border-radius: 999rem;
+  border-style: solid ;
+  border-color: white;
+  position: absolute;
+  top:230px;
+  bottom: 0px;
+  left: 130px;
+  right: 0px;
+  z-index: 3;
+}
+#rightB{
+  width: 50px;
+  height: 50px;
+  border-radius: 999rem;
+  border-style: solid ;
+  border-color: white;
+  position: absolute;
+  top:230px;
+  bottom: 0px;
+  left: 260px;
+  right: 0px;
+  z-index: 3;
+}
+#centerB{
+  width: 50px;
+  height: 50px;
+  border-radius: 999rem;
+  border-style: solid ;
+  border-color: white;
+  position: absolute;
+  top:230px;
+  bottom: 0px;
+  left: 195px;
+  right: 0px;
+  z-index: 3;
+}
+#boll{
+  width: 47px;
+  height: 47px;
+  position: absolute;
+  border-radius: 999rem;
+  background-color: white;
+  top: 235px;
+  z-index: 3;
+    transform: translateX(135px);
+}
