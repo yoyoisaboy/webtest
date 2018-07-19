@@ -1,0 +1,22 @@
+body{
+    background-image: url(./indexPic/back.png);
+}
+#carouselExampleIndicators{
+    height: 379px;
+    width: 379px;
+    position: absolute;
+    left: 575px;
+}
+.fontblack{
+    color: black;
+}
+.fontred{
+    color: red;
+}
+.fontorange>h5{
+    color: green;
+}
+.fontorange>p{
+    color: blue;
+    font-weight:bold;
+}
